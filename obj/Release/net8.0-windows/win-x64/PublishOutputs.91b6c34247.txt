@@ -1,0 +1,18 @@
+D:\This is the last taskPal i swear\TaskPal.pdb
+D:\This is the last taskPal i swear\sounds\endpromodoro_taskpal.wav
+D:\This is the last taskPal i swear\sounds\endtask_taskpal.wav
+D:\This is the last taskPal i swear\sounds\interface_start_taskpal.wav
+D:\This is the last taskPal i swear\sounds\pop_taskpal.wav
+D:\This is the last taskPal i swear\icon_try_1_M1C_icon (1).ico
+D:\This is the last taskPal i swear\runtimes\win-x64\native\WebView2Loader.dll
+D:\This is the last taskPal i swear\TaskPal.dll.config
+D:\This is the last taskPal i swear\D3DCompiler_47_cor3.dll
+D:\This is the last taskPal i swear\PenImc_cor3.dll
+D:\This is the last taskPal i swear\PresentationNative_cor3.dll
+D:\This is the last taskPal i swear\vcruntime140_cor3.dll
+D:\This is the last taskPal i swear\wpfgfx_cor3.dll
+D:\This is the last taskPal i swear\WebView2Loader.dll
+D:\This is the last taskPal i swear\Microsoft.Web.WebView2.Core.xml
+D:\This is the last taskPal i swear\Microsoft.Web.WebView2.WinForms.xml
+D:\This is the last taskPal i swear\Microsoft.Web.WebView2.Wpf.xml
+D:\This is the last taskPal i swear\TaskPal.exe

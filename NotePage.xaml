@@ -1,0 +1,10 @@
+﻿<Window x:Class="TaskPal.NotePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Note" Height="300" Width="400">
+    <Grid>
+        <TextBox Name="TitleBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="360" Height="30" Margin="20"/>
+        <TextBox Name="ContentBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="360" Height="150" Margin="20,60,20,20"/>
+        <Button Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="20,230,0,0" Click="SaveNote_Click"/>
+    </Grid>
+</Window>

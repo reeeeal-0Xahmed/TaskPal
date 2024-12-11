@@ -1,0 +1,18 @@
+D:\haram b2a\TaskPal.pdb
+D:\haram b2a\sounds\endpromodoro_taskpal.wav
+D:\haram b2a\sounds\endtask_taskpal.wav
+D:\haram b2a\sounds\interface_start_taskpal.wav
+D:\haram b2a\sounds\pop_taskpal.wav
+D:\haram b2a\icon_try_1_M1C_icon (1).ico
+D:\haram b2a\runtimes\win-x86\native\WebView2Loader.dll
+D:\haram b2a\TaskPal.dll.config
+D:\haram b2a\D3DCompiler_47_cor3.dll
+D:\haram b2a\PenImc_cor3.dll
+D:\haram b2a\PresentationNative_cor3.dll
+D:\haram b2a\vcruntime140_cor3.dll
+D:\haram b2a\wpfgfx_cor3.dll
+D:\haram b2a\WebView2Loader.dll
+D:\haram b2a\Microsoft.Web.WebView2.Core.xml
+D:\haram b2a\Microsoft.Web.WebView2.WinForms.xml
+D:\haram b2a\Microsoft.Web.WebView2.Wpf.xml
+D:\haram b2a\TaskPal.exe

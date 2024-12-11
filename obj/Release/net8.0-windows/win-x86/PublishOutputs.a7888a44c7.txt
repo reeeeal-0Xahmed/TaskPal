@@ -1,0 +1,18 @@
+D:\TaskPal demo\TaskPal.pdb
+D:\TaskPal demo\sounds\endpromodoro_taskpal.wav
+D:\TaskPal demo\sounds\endtask_taskpal.wav
+D:\TaskPal demo\sounds\interface_start_taskpal.wav
+D:\TaskPal demo\sounds\pop_taskpal.wav
+D:\TaskPal demo\icon_try_1_M1C_icon (1).ico
+D:\TaskPal demo\runtimes\win-x86\native\WebView2Loader.dll
+D:\TaskPal demo\TaskPal.dll.config
+D:\TaskPal demo\D3DCompiler_47_cor3.dll
+D:\TaskPal demo\PenImc_cor3.dll
+D:\TaskPal demo\PresentationNative_cor3.dll
+D:\TaskPal demo\vcruntime140_cor3.dll
+D:\TaskPal demo\wpfgfx_cor3.dll
+D:\TaskPal demo\WebView2Loader.dll
+D:\TaskPal demo\Microsoft.Web.WebView2.Core.xml
+D:\TaskPal demo\Microsoft.Web.WebView2.WinForms.xml
+D:\TaskPal demo\Microsoft.Web.WebView2.Wpf.xml
+D:\TaskPal demo\TaskPal.exe

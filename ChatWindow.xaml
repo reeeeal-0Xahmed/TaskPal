@@ -1,0 +1,11 @@
+﻿<Window x:Class="TaskPal.ChatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="CanMinimize"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        Title="Chat Window" Height="450" Width="800">
+    <Grid>
+        <!-- WebView2 لعرض صفحة ChatGPT -->
+        <wv2:WebView2 Name="ChatGPTWebView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </Grid>
+</Window>

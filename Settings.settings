@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TaskPal" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FaheemName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Faheem</Value>
+    </Setting>
+    <Setting Name="FaheemInfo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AI assistant to help you</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

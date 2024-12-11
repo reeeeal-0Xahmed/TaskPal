@@ -1,0 +1,21 @@
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\sounds\endpromodoro_taskpal.wav
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\sounds\endtask_taskpal.wav
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\sounds\interface_start_taskpal.wav
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\sounds\pop_taskpal.wav
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\TaskPal.exe
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\icon_try_1_M1C_icon (1).ico
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\TaskPal.dll
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\TaskPal.deps.json
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\TaskPal.runtimeconfig.json
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\TaskPal.dll.config
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\TaskPal.pdb
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\Newtonsoft.Json.dll
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\Microsoft.Web.WebView2.Core.dll
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\Microsoft.Web.WebView2.Core.xml
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\agmed\source\repos\TaskPal\TaskPal\bin\Release\net8.0-windows\publish\Microsoft.Web.WebView2.Wpf.xml

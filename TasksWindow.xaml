@@ -1,0 +1,182 @@
+﻿<Window x:Class="TaskPal.TasksWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tasks" Height="560" Width="874" ResizeMode="CanMinimize"  Background="#f4f4f4">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF8AC0DE"/>
+                <GradientStop Color="#FFB0A0DD" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- أزرار التحكم -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10" Grid.Row="0" Width="774">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="DodgerBlue" />
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="BorderBrush" Value="Black" />
+                    <Setter Property="BorderThickness" Value="1" />
+                    <Setter Property="Padding" Value="10,5" />
+                    <Setter Property="Width" Value="120" />
+                    <Setter Property="Margin" Value="5" />
+                    <Setter Property="Height" Value="40" />
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Grid>
+                                    <Border
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </Border>
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="LightSkyBlue"/>
+                                        <Setter Property="Cursor" Value="Hand" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter Property="Background" Value="LightSkyBlue"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </StackPanel.Resources>
+
+            <Button Content="Add Group" Click="AddGroup_Click" Foreground="Black" >
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.5"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Add Task" Click="AddTask_Click" Foreground="Black" >
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.5"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Edit Group Name" Click="EditGroup_Click" Foreground="Black" >
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.5"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Delete Task" Click="DeleteTask_Click" Foreground="Black" >
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.5"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Delete Group" Click="DeleteGroup_Click" Foreground="Black" >
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.5"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Main Menu" Click="BackToMain_Cli" Width="115" Foreground="Black" >
+                <Button.Background>
+                    <SolidColorBrush Color="White" Opacity="0.5"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+
+        <!-- قائمة الجروبات -->
+        <ListBox x:Name="GroupListBox" Grid.Row="1" Margin="555,40,18,120" 
+         DisplayMemberPath="Name" SelectionChanged="GroupListBox_SelectionChanged">
+            <ListBox.Background>
+                <SolidColorBrush Color="Black" Opacity="0.3"/>
+            </ListBox.Background>
+            <ListBox.Template>
+                <ControlTemplate TargetType="ListBox">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="Gray" BorderThickness="1" CornerRadius="15">
+                        <ScrollViewer>
+                            <ItemsPresenter />
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ListBox.Template>
+        </ListBox>
+
+
+        <ListBox x:Name="TaskListBox" Grid.Row="1" Margin="230,41,343,120">
+            <ListBox.Background>
+                <SolidColorBrush Color="Black" Opacity="0.3"/>
+            </ListBox.Background>
+            <ListBox.Template>
+                <ControlTemplate TargetType="ListBox">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="Gray" BorderThickness="1" CornerRadius="15">
+                        <ScrollViewer>
+                            <ItemsPresenter />
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ListBox.Template>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <!-- Checkbox لإتمام المهمة -->
+                        <CheckBox IsChecked="{Binding IsCompleted}" VerticalAlignment="Center" Margin="5" />
+
+                        <!-- اسم المهمة -->
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5" />
+
+                        <!-- فاصل -->
+                        <TextBlock Text=" - " Foreground="Gray" />
+
+                        <!-- المستوى مع تغيير اللون بناءً على القيمة -->
+                        <TextBlock Text="{Binding Priority}">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="Gray" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Priority}" Value="Low">
+                                            <Setter Property="Foreground" Value="LightGreen" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Priority}" Value="Medium">
+                                            <Setter Property="Foreground" Value="Gold" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Priority}" Value="High">
+                                            <Setter Property="Foreground" Value="IndianRed" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+        <!-- منطقة عرض التفاصيل -->
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Left" Margin="5,13,0,0" RenderTransformOrigin="0.5,0.539" >
+            <Label Content="Edit Task Name :" FontFamily="Yu Gothic UI Semibold"/>
+            <TextBox x:Name="TaskNameTextBox" Width="200" Margin="5" TextChanged="TaskNameTextBox_TextChanged" />
+            <Label Content="Edit Task Priority:" FontFamily="Yu Gothic UI Semibold"/>
+
+            <ComboBox x:Name="TaskPriorityComboBox" Width="200" Height="26">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1" Opacity="0.5">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFE5E5E5" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+                <ComboBoxItem Content="Low"  />
+                <ComboBoxItem Content="Medium" />
+                <ComboBoxItem Content="High" />
+            </ComboBox>
+            <Button Content="Save" Width="100" Click="SaveTask_Click" Height="24" />
+        </StackPanel>
+        <Label Content="Tasks" HorizontalAlignment="Left" Margin="230,4,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" FontFamily="Yu Gothic UI Semibold" RenderTransformOrigin="0.161,0.684"/>
+        <Label Content="Groups" HorizontalAlignment="Left" Margin="555,4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="84" FontSize="20" FontFamily="Yu Gothic UI Semibold"/>
+    </Grid>
+</Window>
